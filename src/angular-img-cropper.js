@@ -159,7 +159,7 @@ angular.module('angular-img-cropper', []).directive("imageCropper", ['$document'
                         ctx.lineTo(p.x + this.position.x, p.y + this.position.y);
                     }
                     ctx.closePath();
-                    ctx.fillStyle = 'rgba(255,228,0,1)';
+                    ctx.fillStyle = 'rgba(255,228,0,0)';
                     ctx.fill();
                 };
                 DragMarker.prototype.recalculatePosition = function (bounds) {
@@ -197,7 +197,7 @@ angular.module('angular-img-cropper', []).directive("imageCropper", ['$document'
                     ctx.lineTo(this.position.x, this.position.y);
                     ctx.closePath();
                     ctx.lineWidth = 2;
-                    ctx.strokeStyle = 'rgba(255,228,0,1)';
+                    ctx.strokeStyle = 'rgba(255, 173, 0, 1)';
                     ctx.stroke();
                 };
                 CornerMarker.prototype.drawCornerFill = function (ctx) {
